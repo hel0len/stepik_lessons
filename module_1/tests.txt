@@ -32,17 +32,15 @@ c) На странице есть карточка товара ""Reversing"", содержащая изображение, назва
 Предусловия: 
 a) Страница http://selenium1py.pythonanywhere.com/ru/catalogue/ открыта и доступна
 b) Корзина пуста
+с) На странице есть ссылка с текстом "The shellcoder's handbook" ведущая на "http://selenium1py.pythonanywhere.com/ru/catalogue/the-shellcoders-handbook_209/
 - Шаг 1
-Действие: Найти товар "The shellcoder's handbook"
-Ожидаемый результат: На странице есть ссылка с текстом "The shellcoder's handbook" ведущая на "http://selenium1py.pythonanywhere.com/ru/catalogue/the-shellcoders-handbook_209/
-- Шаг 2
 Действие: Кликнуть на кнопку "Добавить в корзину" на карточке товара "The shellcoder's handbook"
 Ожидаемый результат:
 a) На странице есть текст "The shellcoder's handbook был добавлен в вашу корзину."
 b) На странице есть текст "Стоимость корзины теперь составляет .... "
 c) На странице есть кнопка "Посмотреть корзину"
 d) На странице есть кнопка "Оформить"
-- Шаг 3
+- Шаг 2
 Действие: Кликнуть на кнопку "Посмотреть корзину"
 Ожидаемый результат:
 a) Открыта страница http://selenium1py.pythonanywhere.com/ru/basket/
@@ -55,23 +53,21 @@ c) На странице есть ссылка с текстом ""The shellcoder's handbook"", ведущая на д
 Предусловия: 
 a) Страница http://selenium1py.pythonanywhere.com/ru/catalogue/ открыта и доступна
 b) Корзина пуста
-- Шаг 1 
-Действие: Найти товар "The shellcoder's handbook"
-Ожидаемый результат: На странице есть ссылка с текстом "The shellcoder's handbook" ведущая на "http://selenium1py.pythonanywhere.com/ru/catalogue/the-shellcoders-handbook_209/
-- Шаг 2
+с) На странице есть ссылка с текстом "The shellcoder's handbook" ведущая на "http://selenium1py.pythonanywhere.com/ru/catalogue/the-shellcoders-handbook_209/
+- Шаг 1
 Действие: Кликнуть на кнопку "Добавить в корзину" на карточке товара "The shellcoder's handbook"
 Ожидаемый результат:
 a) На странице есть текст "The shellcoder's handbook был добавлен в вашу корзину."
 b) На странице есть текст "Стоимость корзины теперь составляет .... "
 c) На странице есть кнопка "Посмотреть корзину"
 d) На странице есть кнопка "Оформить"
-- Шаг 3
+- Шаг 2
 Действие: Кликнуть на кнопку "Посмотреть корзину"
 Ожидаемый результат: 
 a) Открыта страница http://selenium1py.pythonanywhere.com/ru/basket/
 b) На странице есть заголовок h1 "Корзина"
 c) На странице есть кнопка "Удалить"
-- Шаг 4 
+- Шаг 3
 Действие: Кликнуть на кнопку "Удалить"
 Ожидаемый результат:
 a) Открыта страница http://selenium1py.pythonanywhere.com/ru/basket/
@@ -83,28 +79,13 @@ d) На странице есть ссылка с текстом ""Продолжить покупки"" ведущая на страницу 
 Тестовый сценарий 2.2.1
 Уникальное название: Оформление заказа авторизованным пользователем.
 Предусловия: 
-a) Страница http://selenium1py.pythonanywhere.com/ru/catalogue открыта и доступна
+a) Страница http://selenium1py.pythonanywhere.com/ru/basket/ открыта и доступна
+b) В корзине есть один товар - "The shellcoder's handbook"
 b) Выполнена авторизация под пользователем.
-- Шаг 1 
-Действие: Найти товар "The shellcoder's handbook"
-Ожидаемый результат: На странице есть ссылка с текстом "The shellcoder's handbook" ведущая на "http://selenium1py.pythonanywhere.com/ru/catalogue/the-shellcoders-handbook_209/"
-- Шаг 2
-Действие: Кликнуть на кнопку "Добавить в корзину" на карточке товара "The shellcoder's handbook"
-Ожидаемый результат:
-a) На странице есть текст "The shellcoder's handbook был добавлен в вашу корзину."
-b) На странице есть текст "Стоимость корзины теперь составляет .... "
-c) На странице есть кнопка "Посмотреть корзину"
-d) На странице есть кнопка "Оформить"
-- Шаг 3
-Действие: Кликнуть на кнопку "Посмотреть корзину"
-Ожидаемый результат:
-a) Открыта страница http://selenium1py.pythonanywhere.com/ru/basket/
-b) На странице есть заголовок h1 ""Корзина""
-c) На странице есть ссылка с текстом ""The shellcoder's handbook"", ведущая на детальную страницу товара (http://selenium1py.pythonanywhere.com/ru/catalogue/the-shellcoders-handbook_209/)
-- Шаг 4
+- Шаг 1
 Действие: Кликнуть на кнопку "Перейти к оформлению"
 Ожидаемый результат: Открыта страница http://selenium1py.pythonanywhere.com/ru/checkout/shipping-address/
-- Шаг 5
+- Шаг 2
 Действие: Заполнить обязательные поля валидными данными 
     Имя: Lorem
     Фамилия: Ipsum
@@ -112,19 +93,19 @@ c) На странице есть ссылка с текстом ""The shellcoder's handbook"", ведущая на д
     Почтовый индекс: 190000
     Страна: Russian Federation
 Ожидаемый результат: Данные успешно введены
-- Шаг 6
+- Шаг 3
 Действие: Кликнуть на кнопку "Продолжить"
 Ожидаемый результат:
 a) Открыта страница http://selenium1py.pythonanywhere.com/ru/checkout/payment-details/
 b) На странице есть заголовок h1 "Введите параметры платежа"
 c) На странице есть кнопка "Продолжить"
-- Шаг 7
+- Шаг 4
 Действие: Кликнуть на кнопку "Продолжить"
 Ожидаемый результат:
 a) Откурыта страница http://selenium1py.pythonanywhere.com/ru/checkout/preview/
 b) На странице есть заголовок h1 "Просмотреть заказ"
 c) На странице есть кнопка "Разместить заказ"
-- Шаг 8
+- Шаг 5
 Действие: Кликнуть на кнопку "Разместить заказ"
 Ожидаемый результат:
 a) Открыта страница http://selenium1py.pythonanywhere.com/ru/checkout/thank-you/
