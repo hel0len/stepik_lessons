@@ -1,0 +1,5 @@
+input#first-name
+//input[@name='last-username']
+input.email-class
+//input[@data-marker='phone-input']
+//input[contains(@class, "address-class")]
