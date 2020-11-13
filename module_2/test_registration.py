@@ -8,9 +8,9 @@ try:
 
     input1 = browser.find_element_by_xpath('//input[@placeholder="Input your first name"]')
     input1.send_keys("Ivan")
-    input2 = browser.find_element_by_css_selector("input.second")
+    input2 = browser.find_element_by_xpath('//input[@placeholder="Input your last name"]')
     input2.send_keys("Ivanov")
-    input3 = browser.find_element_by_css_selector("input.third")
+    input3 = browser.find_element_by_xpath('//input[@placeholder="Input your email"]')
     input3.send_keys("test@mail.ru")
 
     button = browser.find_element_by_css_selector("button.btn")
