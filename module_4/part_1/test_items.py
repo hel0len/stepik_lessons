@@ -20,9 +20,8 @@ def test_watch_button_add_to_basket(browser):
     browser.get(link)
 
     #Act
-    button_add_to_basket_find = browser.find_element_by_xpath(button_add_to_basket_locator)
-    button_add_to_basket = button_add_to_basket_find.text
+    button_add_to_basket = browser.find_element_by_xpath(button_add_to_basket_locator)
 
     #Assert
-    assert expected_btn_text in button_add_to_basket, \
+    assert expected_btn_text in button_add_to_basket.text, \
         f"button text is different"
