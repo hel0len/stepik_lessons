@@ -6,7 +6,7 @@ from .pages.login_page import LoginPage
 link = "http://selenium1py.pythonanywhere.com/"
 
 class TestMainPage:
-    def test_guest_can_go_to_login_page(browser):
+    def test_guest_can_go_to_login_page(self, browser):
         link = "http://selenium1py.pythonanywhere.com"
         page = MainPage(browser, link)
         page.open()
