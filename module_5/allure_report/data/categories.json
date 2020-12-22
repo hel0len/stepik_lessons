@@ -1,0 +1,26 @@
+{
+  "uid" : "4b4757e66a1912dae1a509f688f20b0f",
+  "name" : "categories",
+  "children" : [ {
+    "name" : "Test defects",
+    "children" : [ {
+      "name" : "selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\".product_main h1\"}\n  (Session info: chrome=87.0.4280.88)",
+      "children" : [ {
+        "name" : "test_guest_can_add_product_to_basket[?promo=offer7]",
+        "uid" : "14bab27cf8c830b6",
+        "parentUid" : "21adf26ffef7625bff6bbd653b910aac",
+        "status" : "broken",
+        "time" : {
+          "start" : 1608670240229,
+          "stop" : 1608670252702,
+          "duration" : 12473
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'?promo=offer7'" ]
+      } ],
+      "uid" : "21adf26ffef7625bff6bbd653b910aac"
+    } ],
+    "uid" : "bdbf199525818fae7a8651db9eafe741"
+  } ]
+}

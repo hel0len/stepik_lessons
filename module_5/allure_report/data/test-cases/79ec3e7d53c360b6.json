@@ -1,0 +1,105 @@
+{
+  "uid" : "79ec3e7d53c360b6",
+  "name" : "test_guest_can_add_product_to_basket[?promo=offer2]",
+  "fullName" : "PycharmProjects.stepik_lessons.module_5.test_product_page.TestProductPage#test_guest_can_add_product_to_basket",
+  "historyId" : "e61f4cd961a6fbf58657c016e00f6a91",
+  "time" : {
+    "start" : 1608670195466,
+    "stop" : 1608670198402,
+    "duration" : 2936
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "browser",
+    "time" : {
+      "start" : 1608670192089,
+      "stop" : 1608670195465,
+      "duration" : 3376
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "6bb352400aa8bcd",
+      "name" : "stdout",
+      "source" : "6bb352400aa8bcd.txt",
+      "type" : "text/plain",
+      "size" : 75
+    } ],
+    "parameters" : [ ],
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : true
+  },
+  "afterStages" : [ {
+    "name" : "browser::0",
+    "time" : {
+      "start" : 1608670198431,
+      "stop" : 1608670201970,
+      "duration" : 3539
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "parentSuite",
+    "value" : "PycharmProjects.stepik_lessons.module_5"
+  }, {
+    "name" : "suite",
+    "value" : "test_product_page"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestProductPage"
+  }, {
+    "name" : "host",
+    "value" : "Computer"
+  }, {
+    "name" : "thread",
+    "value" : "2800-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "PycharmProjects.stepik_lessons.module_5.test_product_page"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "promo",
+    "value" : "'?promo=offer2'"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "79ec3e7d53c360b6.json",
+  "parameterValues" : [ "'?promo=offer2'" ]
+}

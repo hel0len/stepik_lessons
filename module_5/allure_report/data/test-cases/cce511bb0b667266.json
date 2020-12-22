@@ -1,0 +1,109 @@
+{
+  "uid" : "cce511bb0b667266",
+  "name" : "test_guest_cant_see_success_message_after_adding_product_to_basket",
+  "fullName" : "PycharmProjects.stepik_lessons.module_5.test_product_page.TestProductPage#test_guest_cant_see_success_message_after_adding_product_to_basket",
+  "historyId" : "a00535f0776324d925672b8821ac0c8f",
+  "time" : {
+    "start" : 1608670276685,
+    "stop" : 1608670279218,
+    "duration" : 2533
+  },
+  "status" : "skipped",
+  "statusMessage" : "XFAIL\n\nAssertionError: Не должно отображаться сообщение об успешном добавлении товара в корзину",
+  "statusTrace" : "self = <module_5.test_product_page.TestProductPage object at 0x0000013C94EF51F0>\nbrowser = <selenium.webdriver.chrome.webdriver.WebDriver (session=\"65053aa9f46a4e829bf3ae71c964ac4b\")>\n\n    @pytest.mark.xfail()\n    def test_guest_cant_see_success_message_after_adding_product_to_basket(self, browser):\n        link = \"http://selenium1py.pythonanywhere.com/catalogue/coders-at-work_207/\"\n        page = ProductPage(browser, link)\n        page.open()\n        page.add_to_basket()\n>       page.should_not_be_success_message()\n\nmodule_5\\test_product_page.py:38: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n\nself = <module_5.pages.product_page.ProductPage object at 0x0000013C94EB0A30>\n\n    def should_not_be_success_message(self):\n>       assert self.is_not_element_present(*ProductPageLocators.SUCCESS_MESSAGE), \\\n           \"Не должно отображаться сообщение об успешном добавлении товара в корзину\"\nE       AssertionError: Не должно отображаться сообщение об успешном добавлении товара в корзину\n\nmodule_5\\pages\\product_page.py:23: AssertionError",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "browser",
+    "time" : {
+      "start" : 1608670273370,
+      "stop" : 1608670276685,
+      "duration" : 3315
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "status" : "skipped",
+    "statusMessage" : "XFAIL\n\nAssertionError: Не должно отображаться сообщение об успешном добавлении товара в корзину",
+    "statusTrace" : "self = <module_5.test_product_page.TestProductPage object at 0x0000013C94EF51F0>\nbrowser = <selenium.webdriver.chrome.webdriver.WebDriver (session=\"65053aa9f46a4e829bf3ae71c964ac4b\")>\n\n    @pytest.mark.xfail()\n    def test_guest_cant_see_success_message_after_adding_product_to_basket(self, browser):\n        link = \"http://selenium1py.pythonanywhere.com/catalogue/coders-at-work_207/\"\n        page = ProductPage(browser, link)\n        page.open()\n        page.add_to_basket()\n>       page.should_not_be_success_message()\n\nmodule_5\\test_product_page.py:38: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n\nself = <module_5.pages.product_page.ProductPage object at 0x0000013C94EB0A30>\n\n    def should_not_be_success_message(self):\n>       assert self.is_not_element_present(*ProductPageLocators.SUCCESS_MESSAGE), \\\n           \"Не должно отображаться сообщение об успешном добавлении товара в корзину\"\nE       AssertionError: Не должно отображаться сообщение об успешном добавлении товара в корзину\n\nmodule_5\\pages\\product_page.py:23: AssertionError",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "3a72c6aecf534f28",
+      "name" : "stdout",
+      "source" : "3a72c6aecf534f28.txt",
+      "type" : "text/plain",
+      "size" : 49
+    } ],
+    "parameters" : [ ],
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : true,
+    "stepsCount" : 0,
+    "hasContent" : true
+  },
+  "afterStages" : [ {
+    "name" : "browser::0",
+    "time" : {
+      "start" : 1608670279237,
+      "stop" : 1608670281688,
+      "duration" : 2451
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "tag",
+    "value" : "@pytest.mark.xfail"
+  }, {
+    "name" : "parentSuite",
+    "value" : "PycharmProjects.stepik_lessons.module_5"
+  }, {
+    "name" : "suite",
+    "value" : "test_product_page"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestProductPage"
+  }, {
+    "name" : "host",
+    "value" : "Computer"
+  }, {
+    "name" : "thread",
+    "value" : "2800-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "PycharmProjects.stepik_lessons.module_5.test_product_page"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ "@pytest.mark.xfail" ]
+  },
+  "source" : "cce511bb0b667266.json",
+  "parameterValues" : [ ]
+}
