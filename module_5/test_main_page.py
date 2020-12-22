@@ -1,14 +1,16 @@
 import pytest
 from selenium import webdriver
+from .pages.base_page import BasePage
 from .pages.main_page import MainPage
 from .pages.login_page import LoginPage
+from .pages.basket_page import BasketPage
 
 link = "http://selenium1py.pythonanywhere.com/"
 
 class TestMainPage:
     def test_guest_can_go_to_login_page(self, browser):
         link = "http://selenium1py.pythonanywhere.com"
-        page = MainPage(browser, link)
+        page = BasePage(browser, link)
         page.open()
         page.go_to_login_page()
         login_page = LoginPage(browser, browser.current_url)
@@ -18,3 +20,14 @@ class TestMainPage:
         page = MainPage(browser, link)
         page.open()
         page.should_be_login_link()
+
+
+    def test_guest_cant_see_product_in_basket_opened_from_main_page(self, browser):
+        link = "http://selenium1py.pythonanywhere.com"
+        page = BasePage(browser, link)
+        page.open()
+        page.go_to_basket_page()
+        basket_page = BasketPage(browser, browser.current_url)
+        basket_page.is_basket_empty()
+        basket_page.should_be_basket_empty_message()
+

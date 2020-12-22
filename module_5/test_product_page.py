@@ -1,6 +1,7 @@
 from .pages.base_page import BasePage
 from .pages.product_page import ProductPage
 from .pages.login_page import LoginPage
+from .pages.basket_page import BasketPage
 import pytest
 
 link = "http://selenium1py.pythonanywhere.com/catalogue/coders-at-work_207/"
@@ -15,7 +16,7 @@ class TestProductPage():
         page.should_be_book_name()
         page.should_be_book_price()
 
-    @pytest.mark.xfail(reason="wrong message")
+    @pytest.mark.xfail()
     def test_guest_cant_see_success_message_after_adding_product_to_basket(self, browser):
         page = ProductPage(browser, link)
         page.open()
@@ -27,7 +28,7 @@ class TestProductPage():
         page.open()
         page.should_not_be_success_message()
 
-    @pytest.mark.xfail(reason="not disappiring")
+    @pytest.mark.xfail()
     def test_message_disappeared_after_adding_product_to_basket(self, browser):
         page = ProductPage(browser, link)
         page.open()
@@ -45,3 +46,12 @@ class TestProductPage():
         page = ProductPage(browser, link)
         page.open()
         page.go_to_login_page()
+
+    def test_guest_cant_see_product_in_basket_opened_from_product_page(self, browser):
+        link = "http://selenium1py.pythonanywhere.com/catalogue/coders-at-work_207/"
+        page = BasePage(browser, link)
+        page.open()
+        page.go_to_basket_page()
+        basket_page = BasketPage(browser, browser.current_url)
+        basket_page.is_basket_empty()
+        basket_page.should_be_basket_empty_message()
