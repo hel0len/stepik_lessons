@@ -9,7 +9,6 @@ import math
 
 link = "http://selenium1py.pythonanywhere.com/catalogue/coders-at-work_207/"
 
-@pytest.mark.skip()
 class TestProductPage():
     def test_guest_can_add_product_to_basket(self, browser):
         page = ProductPage(browser, link)
