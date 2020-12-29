@@ -25,7 +25,7 @@ def test_check_basket_total_cost_after_adding_good():
 def test_watch_button_show_basket_after_adding_good():
     # Data
     success_button_show_basket = "Посмотреть корзину"
-    button_show_basket_locator = '//p/a[contains(text(), "Посмотреть корзину")]'
+    button_show_basket_locator = '//p/a[contains(text(), success_button_show_basket)]'
 
     # Assert
     button_show_basket = browser.find_element_by_xpath(button_show_basket_locator)

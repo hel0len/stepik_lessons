@@ -48,8 +48,6 @@ def browser(request):
         print("Browser {} still is not implemented".format(browser_name))
     yield browser
     print("\nquit browser..")
-    # получаем переменную с текущей датой и временем в формате ГГГГ-ММ-ДД_ЧЧ-ММ-СС
     now = datetime.now().strftime('%Y-%m-%d_%H-%M-%S')
-    # делаем скриншот с помощью команды Selenium'а и сохраняем его с именем "screenshot-ГГГГ-ММ-ДД_ЧЧ-ММ-СС"
     browser.save_screenshot('screenshot-%s.png' % now)
     browser.quit()
